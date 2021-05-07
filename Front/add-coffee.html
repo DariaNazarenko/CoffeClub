@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+	<title>CoffeeClub</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+        <div class="header-inner">
+            <div class="logo">CoffeeClub</div>
+            
+            <nav class="nav">
+                <a class="nav-link" href="index.html">Coffee</a>
+                <a class="nav-link" href="contacts.html">Contacts</a>
+                <a class="nav-link" href="admin.html">Admin</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+    <div class="intro-add">
+      <form class="addForm">
+        <div class="form-left-decoration"></div>
+        <div class="form-right-decoration"></div>
+        <div class="circle"></div>
+        <div class="form-inner">
+          <h3>Add new coffee</h3>
+          <input type="text" id="name" placeholder="Name">
+          <input type="text" id="price" placeholder="Price">
+          <input type="text" id="type" placeholder="Type">
+          <input type="submit" value="Add" onclick="AddNewCoffee();">
+        </div>
+      </form>
+    </div>
+    <script src='script.js'></script>
+</body>

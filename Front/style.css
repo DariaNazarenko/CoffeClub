@@ -1,0 +1,338 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro{
+    width: 100%;
+    padding-top: 150px;
+    height: 100vh;
+
+    background:
+    url("../Front/coffe-beans3.jpg") center
+    no-repeat;
+    background-size: cover;
+}
+
+.intro-inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.intro-title {
+    color: rgb(250, 250, 250);
+    font-size: 85px;
+    font-weight: 1000;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.header{
+    width: 100%;
+    padding-top: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: burlywood;
+    opacity: 0.8;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.nav{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+
+    color: #fff;
+    text-decoration: none;
+
+    transition: color .1s linear;
+}
+
+.nav-link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: brown;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1s linear;
+}
+
+.nav-link:hover {
+    color: brown;
+}
+
+.nav-link:hover:after,
+.nav-link.active:after {
+    opacity: 1;
+}
+
+.nav-link.active {
+    color: #fce38a;
+}
+
+
+
+/* Contacts page */
+.intro-contacts{
+    width: 100%;
+    padding-top: 100px;
+    height: 100vh;
+
+    background:
+    url("../Front/contacts.jpg") center
+    no-repeat;
+    background-size: cover;
+    background-color: burlywood;
+    opacity: 0.8;
+
+}
+
+.intro-inner-contacts {
+    width: 100%;
+    max-width: 880px;
+    margin: 15px;
+
+    text-align: left;
+}
+
+.intro-title-contacts {
+    color: rgb(255, 255, 255);
+    font-size: 47px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.intro-subtitle-contacts{
+    color: rgb(250, 250, 250);
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+
+/* Admin page */
+.intro-admin{
+    width: 100%;
+    padding-top: 100px;
+    height: 100vh;
+
+    background:
+    url("../Front/wood1.jpg") center
+    no-repeat;
+    background-size: cover;
+}
+
+/* Table css */
+table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    border-collapse: collapse;
+    color: #686461;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  caption {
+    padding: 10px;
+    color: white;
+    background: #8FD4C1;
+    font-size: 18px;
+    text-align: left;
+    font-weight: bold;
+  }
+  th {
+    border-bottom: 3px solid #B9B29F;
+    padding: 10px;
+    text-align: left;
+  }
+  td {
+    padding: 10px;
+  }
+   tr:nth-child(odd) {
+    background: white;
+  }
+  tr:nth-child(even) {
+    background: #E8E6D1;
+  } 
+  tr:active {
+    background: rgb(240, 63, 63);
+    opacity: 0.8;
+  }
+
+  /* Add button */
+  .buttAdd {
+    text-align:center; 
+    font-size:16px;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 3px 6px;
+    background: #eaeef1;
+    width:100px;
+    margin: 20px auto;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.1));
+    border-radius: 3px;
+    color: rgba(0,0,0,.6);
+    text-shadow: 0 1px 1px rgba(255,255,255,.7);
+    box-shadow: 0 0 0 1px rgba(0,0,0,.2), 0 1px 2px rgba(0,0,0,.2), inset 0 1px 2px rgba(255,255,255,.7);
+}
+
+.buttAdd:hover, a.butt.hover {
+    background: #fff;
+}
+.buttAdd:active, a.butt.active {
+    background: #d0d3d6;
+    background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,0));
+    box-shadow: inset 0 0 2px rgba(0,0,0,.2), inset 0 2px 5px rgba(0,0,0,.2), 0 1px rgba(255,255,255,.2);
+}
+
+/* Add new coffee page */
+.intro-add{
+    width: 100%;
+    padding-top: 100px;
+    height: 100vh;
+
+    background:
+    url("../Front/wood1.jpg") center
+    no-repeat;
+    background-size: cover;
+}
+
+/* Form css */
+* {box-sizing: border-box;}
+.addForm {
+  position: relative;
+  max-width: 400px;
+  margin: 50px auto 0;
+  background: white;
+  border-radius: 30px;
+}
+.form-left-decoration,
+.form-right-decoration {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  background: #81402d;
+  border-radius: 20px;
+}
+.form-left-decoration {
+  bottom: 60px;
+  left: -30px;
+}
+.form-right-decoration {
+  top: 60px;
+  right: -30px;
+}
+.form-left-decoration:before,
+.form-left-decoration:after,
+.form-right-decoration:before,
+.form-right-decoration:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  border-radius: 30px;
+  background: white;
+}
+.form-left-decoration:before {top: -20px;}
+.form-left-decoration:after {
+  top: 20px;
+  left: 10px;
+}
+.form-right-decoration:before {
+  top: -20px;
+  right: 0;
+}
+.form-right-decoration:after {
+  top: 20px;
+  right: 10px;
+}
+.circle {
+  position: absolute;
+  bottom: 80px;
+  left: -55px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+}
+.form-inner {padding: 50px;}
+.form-inner input,
+.form-inner textarea {
+  display: block;
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  background: #E9EFF6;
+  line-height: 40px;
+  border-width: 0;
+  border-radius: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+.form-inner input[type="submit"] {
+  margin-top: 30px;
+  background: #81402d;
+  border-bottom: 4px solid #81402d;
+  color: white;
+  font-size: 14px;
+}
+.form-inner textarea {resize: none;}
+.form-inner h3 {
+  margin-top: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #707981;
+}
